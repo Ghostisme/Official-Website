@@ -19,7 +19,7 @@
   ],
   "rules": {
     "no-unused-vars": [
-      0,
+      1,
       {
         "args": "after-used",
         "argsIgnorePattern": "^_"
