@@ -2190,6 +2190,16 @@
   resolved "https://registry.npmmirror.com/@storybook/react-dom-shim/-/react-dom-shim-8.3.0.tgz#e6c8c75ff725a9a096fb63b46dc4108e51428857"
   integrity sha512-87X4cvgwFT1ll5SzXgQq6iGbkVCgxLBpBm58akF/hzpeRkwfJDncGi/A5hElOJrBg63IkznmSJE7tf9RkrboqQ==
 
+"@storybook/react-webpack5@^8.3.0":
+  version "8.3.0"
+  resolved "https://registry.npmmirror.com/@storybook/react-webpack5/-/react-webpack5-8.3.0.tgz#16c4cdce747c422a49735f4ec87db58e726752c9"
+  integrity sha512-kDNkSWnrGqyYxJ+hqCuZEQd8erYVznlfAWm81E6RA43sR+S9M0uhsYUvydU+s85GQpem8mzh3kDcaMT0E0RtYA==
+  dependencies:
+    "@storybook/builder-webpack5" "8.3.0"
+    "@storybook/preset-react-webpack" "8.3.0"
+    "@storybook/react" "8.3.0"
+    "@types/node" "^22.0.0"
+
 "@storybook/react@8.3.0", "@storybook/react@^8.3.0":
   version "8.3.0"
   resolved "https://registry.npmmirror.com/@storybook/react/-/react-8.3.0.tgz#2619341ece6613f81eb1e6e056929525fbcdcf85"
