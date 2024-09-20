@@ -19,8 +19,8 @@ const itemsData = [
 
 const LabelScreen = () => {
   return (
-    <div className="w-full h-[100vh] bg-slate-600 flex justify-center">
-      <div className="mt-[203px] flex">
+    <div className="w-screen h-screen bg-slate-600 flex justify-center">
+      <div className="flex">
         {itemsData.map(({ className, image, title, description }) => (
           <div
             className={twMerge(

@@ -2,12 +2,18 @@
 import HomeScreen from '@/app/components/screen_home';
 import LabelScreen from '@/app/components/screen_label';
 import WhyChoiceScreen from '@/app/components/screen_why_choice';
-import React, { useEffect, useState } from 'react';
-import 'swiper/swiper.scss';
-// import 'swiper/css/bundle';
+import { useEffect, useState } from 'react';
+import 'swiper/css';
+import 'swiper/css/bundle';
+import 'swiper/css/controller';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 // import 'swiper/css/virtual';
-// import { Virtual } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore from 'swiper';
+import { Controller, Mousewheel, Pagination, Scrollbar } from 'swiper/modules';
+import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
+SwiperCore.use([Pagination, Mousewheel]);
 const swiperList = [
   {
     id: 1,
@@ -28,7 +34,9 @@ const swiperList = [
     key: 'Slide 3'
   }
 ];
-const Home: React.FC = () => {
+export default function Home() {
+  const swiper = useSwiper();
+  const [controlledSwiper, setControlledSwiper] = useState(null);
   const [list, setList] = useState(
     [] as {
       id: number;
@@ -43,30 +51,34 @@ const Home: React.FC = () => {
   const onSwiper = (swiper) => {
     console.log(swiper, 'swiper');
   };
-  const onSlideChange = () => {
+  const handleSlideChange = () => {
     console.log('change');
+    console.log(controlledSwiper, 'controlledSwiper');
+    // swiper && swiper.slideNext();
   };
   return (
     <div>
       <main>
         <Swiper
-          direction="vertical"
-          initialSlide={1}
-          spaceBetween={20}
-          slidesPerView={1}
+          pagination={{ clickable: true }}
+          parallax
+          modules={[Mousewheel, Pagination, Scrollbar, Controller]}
+          scrollbar={{ draggable: true }}
+          controller={{ control: controlledSwiper }}
           onSwiper={onSwiper}
-          onSlideChange={onSlideChange}
+          onSlideChange={handleSlideChange}
         >
           {list.map((item, index) => (
-            <SwiperSlide key={item.key} virtualIndex={index}>
+            <SwiperSlide key={item.key} className="w-screen h-screen">
               {/* {item.Component} */}
-              {item.key}
+              <item.Component />
+              {/* {item.key} */}
             </SwiperSlide>
           ))}
         </Swiper>
       </main>
     </div>
   );
-};
+}
 
-export default Home;
+// export default Home;
