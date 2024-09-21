@@ -19,7 +19,7 @@ const itemsData = [
 
 const LabelScreen = () => {
   return (
-    <div className="w-screen h-screen bg-slate-600 flex justify-center">
+    <div className="w-screen h-screen bg-black flex justify-center items-center">
       <div className="flex">
         {itemsData.map(({ className, image, title, description }) => (
           <div

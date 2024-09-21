@@ -1,6 +1,8 @@
 'use client';
+import Brand from '@/app/components/screen_brand';
 import HomeScreen from '@/app/components/screen_home';
 import LabelScreen from '@/app/components/screen_label';
+import ScreenSwiper from '@/app/components/screen_swiper';
 import WhyChoiceScreen from '@/app/components/screen_why_choice';
 import { useEffect, useState } from 'react';
 import 'swiper/css';
@@ -11,8 +13,8 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 // import 'swiper/css/virtual';
 import SwiperCore from 'swiper';
-import { Controller, Mousewheel, Pagination, Scrollbar } from 'swiper/modules';
-import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
+import { Mousewheel, Pagination } from 'swiper/modules';
+import { useSwiper } from 'swiper/react';
 SwiperCore.use([Pagination, Mousewheel]);
 const swiperList = [
   {
@@ -57,9 +59,24 @@ export default function Home() {
     // swiper && swiper.slideNext();
   };
   return (
-    <div>
-      <main>
-        <Swiper
+    <main className="overflow-x-hidden">
+      <section className="indicator scroll-indicator"></section>
+      <section className="product common-box">
+        <HomeScreen />
+      </section>
+      <section className="product common-box">
+        <LabelScreen />
+      </section>
+      <section className="product common-box">
+        <ScreenSwiper />
+      </section>
+      <section className="product common-box">
+        <Brand />
+      </section>
+      <section className="product common-box">
+        <WhyChoiceScreen />
+      </section>
+      {/* <Swiper
           pagination={{ clickable: true }}
           parallax
           modules={[Mousewheel, Pagination, Scrollbar, Controller]}
@@ -70,14 +87,11 @@ export default function Home() {
         >
           {list.map((item, index) => (
             <SwiperSlide key={item.key} className="w-screen h-screen">
-              {/* {item.Component} */}
               <item.Component />
-              {/* {item.key} */}
             </SwiperSlide>
           ))}
-        </Swiper>
-      </main>
-    </div>
+        </Swiper> */}
+    </main>
   );
 }
 
