@@ -1,5 +1,13 @@
 import { Swiper } from 'swiper/react';
 import './index.css';
+const listData = [
+  {
+    id: 1,
+    title: '',
+    description: '',
+    image: '/images/label-right.png'
+  }
+];
 const ScreenSwiper = () => {
   return (
     <div className="w-screen h-screen bg-black text-white">
