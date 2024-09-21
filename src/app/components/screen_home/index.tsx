@@ -1,5 +1,3 @@
-'use client';
-// import useCanvas from './useCanvas';
 const HomeScreen = () => {
   // useEffect(() => {
   // }, []);
