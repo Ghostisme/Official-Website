@@ -3,6 +3,7 @@ import { twMerge } from 'tailwind-merge';
 
 const itemsData = [
   {
+    id: 1,
     title: '大模型标注',
     description:
       '视觉通用大模型，激光雷达通用大模型，有效提升标注质量，同时大幅提升标注成本。',
@@ -10,6 +11,7 @@ const itemsData = [
     className: 'mr-[94px]'
   },
   {
+    id: 2,
     title: 'RLHF标注',
     description:
       '视觉通用大模型，激光雷达通用大模型，有效提升标注质量，同时大幅提升标注成本。',
@@ -19,10 +21,14 @@ const itemsData = [
 
 const LabelScreen = () => {
   return (
-    <div className="w-screen h-screen bg-black flex justify-center items-center">
+    <div
+      className="w-screen h-screen bg-black flex justify-center items-center box-border"
+      style={{ border: '1px solid #fff' }}
+    >
       <div className="flex">
-        {itemsData.map(({ className, image, title, description }) => (
+        {itemsData.map(({ className, image, title, description, id }) => (
           <div
+            key={id}
             className={twMerge(
               'w-[600px] h-[700px] border-solid border-[#4C4C4C] border-[5px] bg-gray-900	 rounded-[10px] px-[42px]',
               className

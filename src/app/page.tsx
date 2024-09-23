@@ -76,6 +76,23 @@ export default function Home() {
       <section className="product common-box">
         <WhyChoiceScreen />
       </section>
+      {/* <section>
+        <section className="product common-box">
+          <HomeScreen />
+        </section>
+        <section className="product common-box">
+          <LabelScreen />
+        </section>
+        <section className="product common-box">
+          <ScreenSwiper />
+        </section>
+        <section className="product common-box">
+          <Brand />
+        </section>
+        <section className="product common-box">
+          <WhyChoiceScreen />
+        </section>
+      </section> */}
       {/* <Swiper
           pagination={{ clickable: true }}
           parallax

@@ -1,3 +1,4 @@
+import './index.css';
 const HomeScreen = () => {
   // useEffect(() => {
   // }, []);
@@ -17,19 +18,13 @@ const HomeScreen = () => {
             </div>
             <div>
               <div className="flex items-center justify-start">
-                <div
-                  className="mr-5 rounded-lg border-2 border-solid text-center cursor-pointer"
-                  style={{
-                    borderImage:
-                      'linear-gradient(146deg, #CDD4AF, #7D6CFE) 10 10'
-                  }}
-                >
-                  <div className="px-14 py-4 text-center bg-[#6C6C6C]/[22%]">
+                <div className="mr-5 text-center cursor-pointer">
+                  <div className="rounded-lg border-2 border-solid border-transparent px-14 py-4 text-center bg-[#6C6C6C]/[22%] free-shadow">
                     免费试用
                   </div>
                 </div>
-                <div className="rounded-lg border-2 border-solid border-transparent cursor-pointer">
-                  <div className="px-14 py-4 text-center bg-[#0F0F0F]/[22%] shadow shadow-white">
+                <div className="cursor-pointer text-center">
+                  <div className="rounded-lg border-2 border-solid border-transparent px-14 py-4 text-center bg-[#0F0F0F]/[22%] shadow-box shadow-[#FEFEFE]">
                     联系专家
                   </div>
                 </div>

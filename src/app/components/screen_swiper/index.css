@@ -1,3 +1,46 @@
 .text-fill-color {
   -webkit-text-fill-color: transparent;
 }
+
+.swiper {
+  /* --swiper-pagination-color: '#fff'; */
+}
+
+.swiper-wrapper .swiper-item {
+  /* width: 100% !important; */
+  /* height: 100%; */
+  width: 31.25rem !important;
+  height: 21.875rem;
+}
+
+.swiper-wrapper .swiper-item .item-content {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: flex-end;
+  padding-left: 1.625rem;
+  padding-bottom: 2.1875rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-attachment: local;
+}
+
+.item-content .item-title {
+  font-family: Source Han Sans CN;
+  font-weight: 800;
+  font-size: 2.25rem;
+  color: #fefefe;
+  line-height: 2.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.item-content .item-desc {
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: #cacaca;
+}
