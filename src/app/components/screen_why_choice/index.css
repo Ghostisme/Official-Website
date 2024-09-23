@@ -1,0 +1,29 @@
+.step-line {
+  width: 69rem;
+  height: 0.1875rem;
+  background: linear-gradient(89deg, #0369e5 0%, #04cdf9 51%, #0369e5 100%);
+  margin-left: 6rem;
+}
+
+.step-line .line-item {
+  border-radius: 50%;
+}
+
+.step-line .line-item:not(:nth-last-child(1)) {
+  /* margin-right: 11.75rem; */
+  margin-right: 15.75rem;
+}
+/* .step-line .line-item-content:not(:nth-last-child(1)) {
+  margin-right: 10.3125rem;
+} */
+
+.step-item-content .step-img img {
+  transform: translateY(-12.5rem);
+  filter: drop-shadow(#fefefe 0 12.5rem);
+}
+
+.step-item-content .step-title {
+  font-size: 1.75rem;
+  font-family: Source Han Sans CN;
+  height: 5.25rem;
+}

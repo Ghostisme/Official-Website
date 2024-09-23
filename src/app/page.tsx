@@ -1,7 +1,9 @@
 'use client';
 import Brand from '@/app/components/screen_brand';
+import Footer from '@/app/components/screen_footer';
 import HomeScreen from '@/app/components/screen_home';
 import LabelScreen from '@/app/components/screen_label';
+import SuccessStories from '@/app/components/screen_success_stories';
 import ScreenSwiper from '@/app/components/screen_swiper';
 import WhyChoiceScreen from '@/app/components/screen_why_choice';
 import { useEffect, useState } from 'react';
@@ -55,6 +57,12 @@ export default function Home() {
       </section>
       <section className="product common-box">
         <WhyChoiceScreen />
+      </section>
+      <section className="product common-box">
+        <SuccessStories />
+      </section>
+      <section>
+        <Footer />
       </section>
       {/* <section>
         <section className="product common-box">
