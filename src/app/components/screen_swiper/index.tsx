@@ -42,7 +42,6 @@ const ScreenSwiper = () => {
     <div className="w-screen h-screen bg-black text-white">
       <div className="w-screen h-screen flex flex-col justify-center items-center">
         <div className="text-fill-color font-normal mb-10 text-xl text-[#FEFEFE] bg-gradient-to-r from-[#0369E5] from-0% via-[#04DAFC] via-52.9296875% to-[#0369E5] to-100% bg-clip-text">
-          {/* style={'-webkit-text-fill-color: transparent;'} */}
           Intelligent Annotation Platform
         </div>
         <div className="font-extrabold text-[#FEFEFE] text-6xl mb-11">

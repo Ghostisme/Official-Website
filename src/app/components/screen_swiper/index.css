@@ -2,6 +2,15 @@
   -webkit-text-fill-color: transparent;
 }
 
+.brand-item {
+  width: 9.5625rem;
+  height: 9.5625rem;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  text-align: center;
+  line-height: 9.5625rem;
+}
+
 .swiper {
   /* --swiper-pagination-color: '#fff'; */
 }

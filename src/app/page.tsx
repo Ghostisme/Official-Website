@@ -5,17 +5,7 @@ import LabelScreen from '@/app/components/screen_label';
 import ScreenSwiper from '@/app/components/screen_swiper';
 import WhyChoiceScreen from '@/app/components/screen_why_choice';
 import { useEffect, useState } from 'react';
-import 'swiper/css';
-import 'swiper/css/bundle';
-import 'swiper/css/controller';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
-// import 'swiper/css/virtual';
-import SwiperCore from 'swiper';
-import { Mousewheel, Pagination } from 'swiper/modules';
-import { useSwiper } from 'swiper/react';
-SwiperCore.use([Pagination, Mousewheel]);
+
 const swiperList = [
   {
     id: 1,
@@ -37,8 +27,6 @@ const swiperList = [
   }
 ];
 export default function Home() {
-  const swiper = useSwiper();
-  const [controlledSwiper, setControlledSwiper] = useState(null);
   const [list, setList] = useState(
     [] as {
       id: number;
@@ -50,14 +38,6 @@ export default function Home() {
   useEffect(() => {
     setList(swiperList);
   });
-  const onSwiper = (swiper) => {
-    console.log(swiper, 'swiper');
-  };
-  const handleSlideChange = () => {
-    console.log('change');
-    console.log(controlledSwiper, 'controlledSwiper');
-    // swiper && swiper.slideNext();
-  };
   return (
     <main className="overflow-x-hidden">
       <section className="indicator scroll-indicator"></section>
