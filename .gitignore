@@ -8,6 +8,7 @@
 .history
 .dist
 dist.zip
+dist/*
 
 # testing
 /coverage

@@ -43,6 +43,9 @@ export default function Home() {
   return (
     <main className="overflow-x-hidden">
       <section className="indicator scroll-indicator"></section>
+      {/* <section>
+        <AnimateDemo />
+      </section> */}
       <section className="product common-box">
         <HomeScreen />
       </section>

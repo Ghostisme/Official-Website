@@ -3,4 +3,22 @@
 
 .stories-content .content-item {
   width: 47.75rem;
+  height: 25rem;
+  border-radius: 0.625rem;
+}
+
+.content-item .item-logo {
+}
+
+.content-item .item-logo img {
+  width: 13.75rem;
+  height: 4.0625rem;
+}
+
+.content-item .item-title {
+  font-family: Source Han Sans CN;
+}
+
+.content-item .item-desc {
+  font-family: Source Han Sans CN;
 }
