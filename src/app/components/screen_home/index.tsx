@@ -13,18 +13,18 @@ const HomeScreen = () => {
             <div className="text-white font-bold text-6xl mb-8">
               憬象助力唤醒您的AI应用
             </div>
-            <div className="mb-8">
+            <div className="mb-8 text-[#fefefe] font-normal text-xl">
               这里要不要加点什么内容介绍之类......感觉有点空
             </div>
             <div>
               <div className="flex items-center justify-start">
                 <div className="mr-5 text-center cursor-pointer">
-                  <div className="rounded-lg border-2 border-solid border-transparent px-14 py-4 text-center bg-[#6C6C6C]/[22%] free-shadow">
+                  <div className="rounded-lg border-2 border-solid border-transparent px-14 py-4 text-center bg-[#6C6C6C]/[22%] free-shadow text-[#fefefe] font-normal text-xl">
                     免费试用
                   </div>
                 </div>
                 <div className="cursor-pointer text-center">
-                  <div className="rounded-lg border-2 border-solid border-transparent px-14 py-4 text-center bg-[#0F0F0F]/[22%] shadow-box shadow-[#FEFEFE]">
+                  <div className="rounded-lg border-2 border-solid border-transparent px-14 py-4 text-center bg-[#0F0F0F]/[22%] shadow-box shadow-[#FEFEFE] text-[#fefefe] font-normal text-xl">
                     联系专家
                   </div>
                 </div>

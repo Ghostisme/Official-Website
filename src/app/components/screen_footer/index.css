@@ -1,0 +1,4 @@
+.wechat-img img {
+  transform: translateY(-12.5rem);
+  filter: drop-shadow(#fefefe 0 12.5rem);
+}
