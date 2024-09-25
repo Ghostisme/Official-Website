@@ -1,0 +1,44 @@
+.content-container {
+  padding-left: 20.875rem;
+  /* height: 41.6875rem; */
+  /* height: 49.9375rem; */
+}
+
+.content-container .top-content {
+  height: 2.4375rem;
+}
+
+.top-content .top-img {
+  /* width: 53.8125rem; */
+  /* height: 35.5625rem; */
+  width: 56.25rem; /* 900 */
+  height: 31.25rem;
+}
+
+.content-container .center-content {
+  height: 39.25rem;
+}
+
+.center-content .title-text {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.center-content .content-text {
+  padding-top: 4.375rem;
+  padding-left: 1.625rem;
+  padding-right: 63.125rem; /* 1010 */
+}
+
+.content-container .bottom-content {
+  height: 8.25rem;
+}
+
+.bottom-content .content-box {
+  margin-top: -23.4375rem;
+}
+
+.draw-img {
+  width: 15.1875rem; /* 243 */
+  height: 15.1875rem;
+}
