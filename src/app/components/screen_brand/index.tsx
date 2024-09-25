@@ -26,7 +26,7 @@ const Brand = () => {
           AI赋能的智能标注平台
         </div>
         <div className="mb-24 text-[#CACACA] text-xl px-[700px] leading-6 text-center tracking-wider">
-          融合行业近百种AI算法模型，如以下，实现AI大模型技术全面赋能全门类标注任务，
+          融合行业近百种AI算法模型，实现AI大模型技术全面赋能全门类标注任务，
           全面提升模型标注质量和标注效率。
         </div>
         <div className="w-screen flex items-center justify-around">

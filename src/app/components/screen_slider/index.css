@@ -1,0 +1,23 @@
+.logo-box {
+  /* width: 11.375rem; */
+  height: 3.4375rem;
+  width: 3.4375rem;
+  background: url('/images/logo-slice@2x.png') no-repeat;
+  /* background-position: center; */
+  background-position: 0.3125rem 0.125rem;
+  background-size: cover;
+  background-clip: content-box;
+  margin-bottom: 11rem;
+  margin-top: 6.9375rem;
+}
+
+.logo-box-full {
+  width: 11.375rem;
+  height: 3.4375rem;
+  background: url('/images/panorobo.png') no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-clip: content-box;
+  margin-bottom: 11rem;
+  margin-top: 6.9375rem;
+}

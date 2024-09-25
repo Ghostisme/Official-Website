@@ -34,7 +34,7 @@ const Footer = () => {
               <div className="divider w-full h-px bg-[#CACACA] mb-3"></div>
               <div className="flex items-center justify-between w-full">
                 <div className="copy font-normal text-[#CACACA] text-xl">
-                  备xxxxx
+                  沪ICP备2024089262号
                 </div>
                 <div className="w-10 h-10 wechat-img">
                   <img
@@ -43,6 +43,9 @@ const Footer = () => {
                     alt="这是一个图标"
                   />
                 </div>
+              </div>
+              <div className="w-full flex items-center justify-center text-[#CACACA] text-base">
+                版权所有 © 2024 憬象智能保留所有权利。
               </div>
             </div>
           </div>

@@ -7,14 +7,14 @@ const HomeScreen = () => {
       <div className="w-screen h-screen bg-[url('/images/A020_-Y12854666.png')] bg-cover bg-clip-content bg-center bg-origin-content bg-local bg-no-repeat">
         <div className="w-screen h-screen flex justify-center items-center">
           <div className="grid justify-center items-center">
-            <div className="text-white font-bold text-6xl mb-8">
+            <div className="text-white font-extrabold text-6xl mb-8">
               憬通万物 象启未来
             </div>
-            <div className="text-white font-bold text-6xl mb-8">
+            <div className="text-white font-extrabold text-6xl mb-8">
               憬象助力唤醒您的AI应用
             </div>
             <div className="mb-8 text-[#fefefe] font-normal text-xl">
-              这里要不要加点什么内容介绍之类......感觉有点空
+              全领域覆盖，大模型赋能，憬象AI以更好的数据，与您加速共创明日世界。
             </div>
             <div>
               <div className="flex items-center justify-start">
