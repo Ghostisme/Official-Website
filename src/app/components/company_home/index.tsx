@@ -9,7 +9,7 @@ const CompanyHome = () => {
               我们的愿景：
             </div>
             <div className="text-white font-extrabold text-6xl mb-8">
-              用数据助力AGI觉醒，
+              用数据助力AGI觉醒，标注
               {/* 标注 */}
             </div>
             <div className="text-white font-extrabold text-6xl mb-8">

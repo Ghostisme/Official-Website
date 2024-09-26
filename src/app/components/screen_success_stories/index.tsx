@@ -5,7 +5,7 @@ const storiesList = [
     id: 1,
     logo: '/images/panorobo.png',
     bgimg: '/images/stories1.jpg',
-    title: '智阳后装ADAS ',
+    title: '智阳后装ADAS AI标注项目',
     // AI标注项目
     description:
       '智阳公司面向DVR后端市场，约有500万用户群体，憬象智能在该项目中主要为客户完成前方车辆、行人及车道线相关标注任务。',
