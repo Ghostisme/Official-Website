@@ -53,7 +53,7 @@ const Values = () => {
             </div>
             <div className="bottom-content w-full bg-transparent">
               <div className="content-box">
-                <div className="flex items-center justify-center ml-20">
+                <div className="flex items-center justify-center ml-24">
                   <div className="draw-img grid">
                     {arr.map((item, index) => (
                       <div
@@ -62,7 +62,7 @@ const Values = () => {
                       >
                         {item.map((t) => (
                           <div
-                            className="w-2 h-2 rounded-full bg-gray-800"
+                            className="w-2 h-2 rounded-full bg-[#505050]"
                             key={`${index}_${t}`}
                           ></div>
                         ))}
@@ -77,7 +77,7 @@ const Values = () => {
                       >
                         {item.map((t) => (
                           <div
-                            className="w-2 h-2 rounded-full bg-gray-800"
+                            className="w-2 h-2 rounded-full bg-[#505050]"
                             key={`${index}_${t}`}
                           ></div>
                         ))}
@@ -85,7 +85,7 @@ const Values = () => {
                     ))}
                   </div>
                 </div>
-                <div className="flex items-center justify-center ml-20">
+                <div className="flex items-center justify-center ml-24">
                   <div className="draw-img grid">
                     {arr.map((item, index) => (
                       <div
@@ -94,7 +94,7 @@ const Values = () => {
                       >
                         {item.map((t) => (
                           <div
-                            className="w-2 h-2 rounded-full bg-gray-800"
+                            className="w-2 h-2 rounded-full bg-[#505050]"
                             key={`${index}_${t}`}
                           ></div>
                         ))}
@@ -109,7 +109,7 @@ const Values = () => {
                       >
                         {item.map((t) => (
                           <div
-                            className="w-2 h-2 rounded-full bg-gray-800"
+                            className="w-2 h-2 rounded-full bg-[#505050]"
                             key={`${index}_${t}`}
                           ></div>
                         ))}
@@ -118,30 +118,6 @@ const Values = () => {
                   </div>
                 </div>
               </div>
-              {/* <div className="draw-img grid">
-                {arr.map((item, index) => (
-                  <div className="flex items-center justify-around" key={index}>
-                    {item.map((t) => (
-                      <div
-                        className="w-2 h-2 rounded-full bg-gray-400"
-                        key={`${index}_${t}`}
-                      ></div>
-                    ))}
-                  </div>
-                ))}
-              </div>
-              <div className="draw-img grid">
-                {arr.map((item, index) => (
-                  <div className="flex items-center justify-around" key={index}>
-                    {item.map((t) => (
-                      <div
-                        className="w-2 h-2 rounded-full bg-gray-400"
-                        key={`${index}_${t}`}
-                      ></div>
-                    ))}
-                  </div>
-                ))}
-              </div> */}
             </div>
           </div>
         </div>
