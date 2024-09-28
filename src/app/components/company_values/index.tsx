@@ -33,92 +33,95 @@ const Values = () => {
                 VALUES
               </div>
               <div className="bg-white w-3 h-48 mt-2 mr-3"></div>
-              <div className="bg-[#1D1D1D] w-full h-full content-text">
-                <div className="text-[#FEFEFE] font-extrabold text-7xl mb-12">
-                  我们的价值观
+              <div className="bg-[#1D1D1D] w-full h-full content-text relative">
+                <div className='absolute z-10'>
+                  <div className="text-[#FEFEFE] font-extrabold text-7xl mb-12">
+                    我们的价值观
+                  </div>
+                  <div className="text-[#FEFEFE] font-normal text-2xl mb-10">
+                    技术引领：以技术为锚，坚持以技术为核心驱动力，快速形成具有跨级优势的产品。
+                  </div>
+                  <div className="text-[#FEFEFE] font-normal text-2xl mb-10">
+                    持续进化：公司持续进化，技术持续进化，产品力持续进化，个人持续进化。
+                  </div>
+                  <div className="text-[#FEFEFE] font-normal text-2xl mb-10">
+                    客户至上：坚持用好的服务，为客户实现利益价值最大化。
+                  </div>
+                  <div className="text-[#FEFEFE] font-normal text-2xl">
+                    坦诚务实：彼此坦诚敢于背靠背务实合作。
+                  </div>
                 </div>
-                <div className="text-[#FEFEFE] font-normal text-2xl mb-10">
-                  技术引领：以技术为锚，坚持以技术为核心驱动力，快速形成具有跨级优势的产品。
-                </div>
-                <div className="text-[#FEFEFE] font-normal text-2xl mb-10">
-                  持续进化：公司持续进化，技术持续进化，产品力持续进化，个人持续进化。
-                </div>
-                <div className="text-[#FEFEFE] font-normal text-2xl mb-10">
-                  客户至上：坚持用好的服务，为客户实现利益价值最大化。
-                </div>
-                <div className="text-[#FEFEFE] font-normal text-2xl">
-                  坦诚务实：彼此坦诚敢于背靠背务实合作。
+                <div className="bg-transparent absolute z-0 left-80 ml-80 top-60">
+                  <div className="content-box">
+                    <div className="flex items-center justify-center ml-24">
+                      <div className="draw-img grid">
+                        {arr.map((item, index) => (
+                          <div
+                            className="flex items-center justify-around"
+                            key={index}
+                          >
+                            {item.map((t) => (
+                              <div
+                                className="w-2 h-2 rounded-full bg-[#505050]"
+                                key={`${index}_${t}`}
+                              ></div>
+                            ))}
+                          </div>
+                        ))}
+                      </div>
+                      <div className="draw-img grid">
+                        {arr.map((item, index) => (
+                          <div
+                            className="flex items-center justify-around"
+                            key={index}
+                          >
+                            {item.map((t) => (
+                              <div
+                                className="w-2 h-2 rounded-full bg-[#505050]"
+                                key={`${index}_${t}`}
+                              ></div>
+                            ))}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                    <div className="flex items-center justify-center ml-24">
+                      <div className="draw-img grid">
+                        {arr.map((item, index) => (
+                          <div
+                            className="flex items-center justify-around"
+                            key={index}
+                          >
+                            {item.map((t) => (
+                              <div
+                                className="w-2 h-2 rounded-full bg-[#505050]"
+                                key={`${index}_${t}`}
+                              ></div>
+                            ))}
+                          </div>
+                        ))}
+                      </div>
+                      <div className="draw-img grid">
+                        {arr.map((item, index) => (
+                          <div
+                            className="flex items-center justify-around"
+                            key={index}
+                          >
+                            {item.map((t) => (
+                              <div
+                                className="w-2 h-2 rounded-full bg-[#505050]"
+                                key={`${index}_${t}`}
+                              ></div>
+                            ))}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="bottom-content w-full bg-transparent">
-              <div className="content-box">
-                <div className="flex items-center justify-center ml-24">
-                  <div className="draw-img grid">
-                    {arr.map((item, index) => (
-                      <div
-                        className="flex items-center justify-around"
-                        key={index}
-                      >
-                        {item.map((t) => (
-                          <div
-                            className="w-2 h-2 rounded-full bg-[#505050]"
-                            key={`${index}_${t}`}
-                          ></div>
-                        ))}
-                      </div>
-                    ))}
-                  </div>
-                  <div className="draw-img grid">
-                    {arr.map((item, index) => (
-                      <div
-                        className="flex items-center justify-around"
-                        key={index}
-                      >
-                        {item.map((t) => (
-                          <div
-                            className="w-2 h-2 rounded-full bg-[#505050]"
-                            key={`${index}_${t}`}
-                          ></div>
-                        ))}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-                <div className="flex items-center justify-center ml-24">
-                  <div className="draw-img grid">
-                    {arr.map((item, index) => (
-                      <div
-                        className="flex items-center justify-around"
-                        key={index}
-                      >
-                        {item.map((t) => (
-                          <div
-                            className="w-2 h-2 rounded-full bg-[#505050]"
-                            key={`${index}_${t}`}
-                          ></div>
-                        ))}
-                      </div>
-                    ))}
-                  </div>
-                  <div className="draw-img grid">
-                    {arr.map((item, index) => (
-                      <div
-                        className="flex items-center justify-around"
-                        key={index}
-                      >
-                        {item.map((t) => (
-                          <div
-                            className="w-2 h-2 rounded-full bg-[#505050]"
-                            key={`${index}_${t}`}
-                          ></div>
-                        ))}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
+
           </div>
         </div>
       </div>

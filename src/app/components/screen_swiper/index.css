@@ -3,12 +3,15 @@
 }
 
 .brand-item {
-  width: 9.5625rem;
-  height: 9.5625rem;
+  width: 15rem;
+  height: 15rem;
   border-radius: 50%;
-  border: 1px solid #fff;
+  /* border: 1px solid #fff; */
   text-align: center;
   line-height: 9.5625rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .swiper {
@@ -18,8 +21,8 @@
 .swiper-wrapper .swiper-item {
   /* width: 100% !important; */
   /* height: 100%; */
-  width: 31.25rem !important;
-  height: 21.875rem;
+  
+  height: 42rem;
 }
 
 .swiper-wrapper .swiper-item .item-content {
