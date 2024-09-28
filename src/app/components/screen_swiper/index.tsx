@@ -4,37 +4,44 @@ import 'swiper/css/bundle';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
+
 import './index.css';
 const listData = [
   {
     id: 1,
-    title: '音频标注',
-    description: '音频标注',
-    image: '/images/swiper1.png'
+    title: '点云标注',
+    description: '点云标注',
+    image: '/images/dianyun.png'
   },
   {
     id: 2,
-    title: 'BEV3D标注',
-    description: 'BEV3D标注',
-    image: '/images/swiper2.png'
+    title: '生成式标注',
+    description: '生成式标注',
+    image: '/images/shengchengshi.png'
   },
   {
     id: 3,
-    title: '语义分割',
-    description: '语义分割',
-    image: '/images/swiper3.png'
+    title: '图像标注',
+    description: '图像标注',
+    image: '/images/tuxiang.jpg'
   },
   {
     id: 4,
-    title: '图像标注',
-    description: '图像标注',
-    image: '/images/swiper4.png'
+    title: '文本标注',
+    description: '文本标注',
+    image: '/images/wenben.png'
   },
   {
     id: 5,
-    title: 'RLHF标注',
-    description: 'RLHF标注',
-    image: '/images/swiper2.png'
+    title: '音频标注',
+    description: '音频标注',
+    image: '/images/yinpin.jpg'
+  },
+  {
+    id: 6,
+    title: '语义分割',
+    description: '语义分割',
+    image: '/images/yuyifenge.jpg'
   }
 ];
 const ScreenSwiper = () => {
@@ -51,7 +58,7 @@ const ScreenSwiper = () => {
           憬象智能标注平台支持全工业门类标注任务，在以人为基础的框架下，充分结合了AI算法的能力，从而实现包括RLHF标注，
           BEV4D标注分割，音频标注，文本标注，骨骼关键点标注等全任务类型标注工作的高效且高质量交付能力。
         </div>
-        <div>
+        <div style={{width:'100vw'}}>
           <Swiper
             modules={[Pagination]}
             pagination={{ clickable: true }}

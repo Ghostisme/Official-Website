@@ -6,7 +6,7 @@ const itemsData = [
     id: 1,
     title: '大模型标注',
     description:
-      '视觉通用大模型，激光雷达通用大模型，有效提升标注质量，同时大幅提升标注成本。',
+      '结合视觉与激光雷达通用大模型的数据标注工具，在人机协同的标注模式下，支持智能标注和质检，可大幅提高标注效率，降低标注成本。',
     image: '/images/label-left.png',
     className: 'mr-[94px]'
   },
@@ -14,7 +14,7 @@ const itemsData = [
     id: 2,
     title: 'RLHF标注',
     description:
-      '视觉通用大模型，激光雷达通用大模型，有效提升标注质量，同时大幅提升标注成本。',
+      '通过世界一流的RLHF、数据生成、模型评估、安全和对齐技术，为大语言模型提供数据支持，帮助提高模型泛化能力。',
     image: '/images/label-right.png'
   }
 ];

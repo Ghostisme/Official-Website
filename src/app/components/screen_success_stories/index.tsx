@@ -3,7 +3,7 @@ import './index.css';
 const storiesList = [
   {
     id: 1,
-    logo: '/images/panorobo.png',
+    logo: '/images/logo/meta-logo-bw.png',
     bgimg: '/images/stories1.jpg',
     title: '智阳后装ADAS AI标注项目',
     // AI标注项目
@@ -13,7 +13,7 @@ const storiesList = [
   },
   {
     id: 2,
-    logo: '/images/panorobo.png',
+    logo: '/images/logo/Stability+AI+logo.png',
     bgimg: '/images/stories1.jpg',
     title: '中德智研',
     description:

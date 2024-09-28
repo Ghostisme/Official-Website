@@ -1,17 +1,17 @@
 const brandList = [
   {
     id: 1,
-    img: '',
+    img: '/images/logo/meta-logo-bw.png',
     alt: '这是一个图片'
   },
   {
     id: 2,
-    img: '',
+    img: '/images/logo/nvidia-logo-bw.png',
     alt: '这是一个图片'
   },
   {
     id: 3,
-    img: '',
+    img: '/images/logo/Stability+AI+logo.png',
     alt: '这是一个图片'
   }
 ];
@@ -30,9 +30,10 @@ const Brand = () => {
           全面提升模型标注质量和标注效率。
         </div>
         <div className="w-screen flex items-center justify-around">
-          {[1, 2, 3, 4, 5].map((item, index) => (
-            <div className="border-lg border-white brand-item" key={index}>
-              LOGO
+          {brandList.map((item, index) => (
+            <div className="border-lg border-white brand-item" key={index} 
+            style={{ backgroundImage: `url(${item.img})` }}>
+
             </div>
           ))}
         </div>
