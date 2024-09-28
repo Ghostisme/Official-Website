@@ -34,26 +34,29 @@ const SuccessStories = () => {
           {storiesList.map((item) => (
             <div
               className={twMerge(
-                'content-item p-6 border-4 border-[#4c4c4c] bg-[#6c6c6c]/[50%]',
+                'content-item border-4 border-[#4c4c4c] bg-[#6c6c6c]/[50%]',
                 item.className,
                 `bg-cover bg-clip-border bg-center bg-origin-border bg-local bg-no-repeat`
               )}
               key={item.id}
               style={{ backgroundImage: `url(${item.bgimg})` }}
             >
-              <div className="flex flex-col h-full justify-between">
-                <div className="item-logo flex items-center justify-end">
-                  <img src={item.logo} alt="这是一个图片" />
-                </div>
-                <div className="flex flex-col">
-                  <div className="item-title mb-8 text-[#fefefe] text-4xl font-extrabold">
-                    {item.title}
+              <div className='w-full h-full p-6 bg-black/[30%]'>
+                <div className="flex flex-col h-full justify-between">
+                  <div className="item-logo flex items-center justify-end">
+                    <img src={item.logo} alt="这是一个图片" />
                   </div>
-                  <div className="item-desc font-normal text-xl text-[#cacaca]">
-                    {item.description}
+                  <div className="flex flex-col">
+                    <div className="item-title mb-8 text-[#fefefe] text-4xl font-extrabold">
+                      {item.title}
+                    </div>
+                    <div className="item-desc font-normal text-xl text-[#cacaca]">
+                      {item.description}
+                    </div>
                   </div>
                 </div>
               </div>
+
             </div>
           ))}
         </div>
