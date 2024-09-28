@@ -1,11 +1,13 @@
+import SwiperCore from 'swiper';
 import 'swiper/css';
 import 'swiper/css/autoplay';
 import 'swiper/css/bundle';
 import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
+import { Autoplay, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 import './index.css';
+// 配置Swiper和自动播放插件
+SwiperCore.use([Autoplay]);
 const listData = [
   {
     id: 1,
@@ -36,13 +38,14 @@ const listData = [
     title: '音频标注',
     description: '语音标注工具能够精确识别和分类声音数据，适用于各类语音的标注需求。',
     image: '/images/yinpin.jpg'
-  },
-  {
-    id: 6,
-    title: '语义分割',
-    description: '语义分割',
-    image: '/images/yuyifenge.jpg'
   }
+  // ,
+  // {
+  //   id: 6,
+  //   title: '语义分割',
+  //   description: '语义分割',
+  //   image: '/images/yuyifenge.jpg'
+  // }
 ];
 const ScreenSwiper = () => {
   return (
@@ -64,6 +67,7 @@ const ScreenSwiper = () => {
             pagination={{ clickable: true }}
             slidesPerView={3}
             loop
+            autoplay={{ delay: 2000, disableOnInteraction: false }}
             spaceBetween={50}
           >
             {listData.map((item) => (
