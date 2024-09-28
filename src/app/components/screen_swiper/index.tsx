@@ -1,4 +1,3 @@
-import SwiperCore from 'swiper';
 import 'swiper/css';
 import 'swiper/css/autoplay';
 import 'swiper/css/bundle';
@@ -7,7 +6,7 @@ import { Autoplay, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import './index.css';
 // 配置Swiper和自动播放插件
-SwiperCore.use([Autoplay]);
+// SwiperCore.use([Autoplay]);
 const listData = [
   {
     id: 1,
@@ -63,13 +62,14 @@ const ScreenSwiper = () => {
         </div>
         <div style={{ width: '100vw' }}>
           <Swiper
-            modules={[Pagination]}
+            modules={[Pagination, Autoplay]}
             pagination={{ clickable: true }}
             slidesPerView={3}
             loop
             autoplay={{ delay: 2000, disableOnInteraction: false }}
             spaceBetween={50}
           >
+            {/* autoplay={{ delay: 2000, disableOnInteraction: false }} */}
             {listData.map((item) => (
               <SwiperSlide key={item.id} className="swiper-item">
                 <div

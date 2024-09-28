@@ -11,18 +11,18 @@ const menuList = [
     code: 'home',
     href: '/'
   },
-  {
-    id: 2,
-    title: '标注平台',
-    code: 'annotation',
-    href: '/anno'
-  },
-  {
-    id: 3,
-    title: '价格',
-    code: 'price',
-    href: '/price'
-  },
+  // {
+  //   id: 2,
+  //   title: '标注平台',
+  //   code: 'annotation',
+  //   href: '/anno'
+  // },
+  // {
+  //   id: 3,
+  //   title: '价格',
+  //   code: 'price',
+  //   href: '/price'
+  // },
   {
     id: 4,
     title: '公司介绍',

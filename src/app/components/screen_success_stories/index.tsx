@@ -41,10 +41,10 @@ const SuccessStories = () => {
               key={item.id}
               style={{ backgroundImage: `url(${item.bgimg})` }}
             >
-              <div className='w-full h-full p-6 bg-black/[30%]'>
+              <div className='w-full h-full p-6  bg-gradient-to-t from-black/[30%] to-transparent'>
                 <div className="flex flex-col h-full justify-between">
                   <div className="item-logo flex items-center justify-end">
-                    <img src={item.logo} alt="这是一个图片" />
+                    {/* <img src={item.logo} alt="这是一个图片" /> */}
                   </div>
                   <div className="flex flex-col">
                     <div className="item-title mb-8 text-[#fefefe] text-4xl font-extrabold">

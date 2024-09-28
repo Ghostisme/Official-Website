@@ -23,7 +23,7 @@ const Values = () => {
               <div className="top-img">
                 <img
                   className="w-full h-full"
-                  src="/images/swiper1.png"
+                  src="/images/swiper3.png"
                   alt="这是一个图片"
                 />
               </div>

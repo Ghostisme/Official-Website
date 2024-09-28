@@ -1,7 +1,7 @@
+import useJumpPage from '@/app/hooks/jumpPage';
 import './index.css';
 const HomeScreen = () => {
-  // useEffect(() => {
-  // }, []);
+  const { handleClick } = useJumpPage()
   return (
     <div className="w-screen h-screen bg-black text-white">
       <div className="w-screen h-screen bg-[url('/images/A020_-Y12854666.png')] bg-cover bg-clip-content bg-center bg-origin-content bg-local bg-no-repeat">
@@ -18,16 +18,16 @@ const HomeScreen = () => {
             </div>
             <div>
               <div className="flex items-center justify-start">
-                <div className="mr-5 text-center cursor-pointer">
+                <div className="mr-5 text-center cursor-pointer" onClick={handleClick}>
                   <div className="rounded-lg border-2 border-solid border-transparent px-14 py-4 text-center bg-[#6C6C6C]/[22%] free-shadow text-[#fefefe] font-normal text-xl">
-                    免费试用
+                    <div>免费试用</div>
                   </div>
                 </div>
-                <div className="cursor-pointer text-center">
+                {/* <div className="cursor-pointer text-center">
                   <div className="rounded-lg border-2 border-solid border-transparent px-14 py-4 text-center bg-[#0F0F0F]/[22%] shadow-box shadow-[#FEFEFE] text-[#fefefe] font-normal text-xl">
                     联系专家
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
