@@ -11,12 +11,13 @@ const menuList = [
     code: 'home',
     href: '/'
   },
-  // {
-  //   id: 2,
-  //   title: '标注平台',
-  //   code: 'annotation',
-  //   href: '/anno'
-  // },
+  {
+    id: 2,
+    title: '标注平台',
+    code: 'annotation',
+    // href: '/anno'
+    href: 'http://47.116.163.237:8190/'
+  },
   // {
   //   id: 3,
   //   title: '价格',
@@ -62,12 +63,24 @@ const Slider = () => {
                     pathname === item.href && 'bg-black'
                   )}
                 >
-                  <Link
-                    href={item.href}
-                    className={`link ${pathname === item.href ? 'active' : ''}`}
-                  >
-                    {item.title}
-                  </Link>
+                  {
+                    item.code === 'annotation' ? (
+                      <Link
+                        href={item.href}
+                        className={`link ${pathname === item.href ? 'active' : ''}`}
+                        target='_blank'
+                      >
+                        {item.title}
+                      </Link>
+                    ) : (
+                      <Link
+                        href={item.href}
+                        className={`link ${pathname === item.href ? 'active' : ''}`}
+                      >
+                        {item.title}
+                      </Link>
+                    )
+                  }
                 </div>
               );
             } else {
