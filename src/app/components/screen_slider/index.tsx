@@ -35,7 +35,7 @@ const Slider = () => {
   const [show, SetShow] = useState(false);
   const pathname = usePathname();
   return (
-    <div className="w-20 h-screen cursor-pointer fixed left-0 top-0 z-50 bg-transparent transition-all delay-150 hover:w-96 hover:bg-[#FFFFFF]/[10%]">
+    <div className="w-20 h-screen cursor-pointer fixed left-0 top-0 z-50 bg-transparent transition-all delay-150 hover:w-96 hover:bg-[#FFFFFF]/[40%]">
       {/* <div className="w-96 h-screen cursor-pointer fixed left-0 top-0 z-50 bg-[#FFFFFF]/[10%] transition-all delay-150 hover:w-96 hover:bg-[#FFFFFF]/[10%]"> */}
       <div
         className={twMerge(

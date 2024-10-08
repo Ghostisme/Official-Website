@@ -79,8 +79,8 @@ const ScreenSwiper = () => {
                   {/* <div className="item-img">
                     <img src={item.image} alt="这是一个图片" />
                   </div> */}
-                  <div className="item-title">{item.title}</div>
-                  <div className="item-desc">{item.description}</div>
+                  <div className="item-title relative z-10">{item.title}</div>
+                  <div className="item-desc relative z-10">{item.description}</div>
                 </div>
               </SwiperSlide>
             ))}

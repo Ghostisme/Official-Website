@@ -27,6 +27,19 @@
   /* height: 42rem; */
 }
 
+.swiper-wrapper .swiper-item::after {
+  content: '';
+  display: block;
+  /* background-color: #000; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  z-index: 0;
+}
+
 .swiper-wrapper .swiper-item .item-content {
   width: inherit;
   height: inherit;

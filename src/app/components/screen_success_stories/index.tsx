@@ -8,7 +8,7 @@ const storiesList = [
     title: '智阳后装ADAS AI标注项目',
     // AI标注项目
     description:
-      '智阳公司面向DVR后端市场，约有500万用户群体，憬象智能在该项目中主要为客户完成前方车辆、行人及车道线相关标注任务。',
+      '憬象智能为智阳科技提供各类车辆，行人检测及车道线检测相关标注任务。标注数据量达到30万张，准确率达到了 98% 以上。',
     className: 'mr-10'
   },
   {
@@ -17,7 +17,7 @@ const storiesList = [
     bgimg: '/images/stories1.jpg',
     title: '中德智研',
     description:
-      '智阳公司面向DVR后端市场，约有500万用户群体，憬象智能在该项目中主要为客户完成前方车辆、行人及车道线相关标注任务。'
+      '为中德智研提供了人脸识别的数据标注服务，数据量达到10万张，帮客户在疲劳驾驶，分心检测等产品开发及性能提升带来显著成果。'
   }
 ];
 const SuccessStories = () => {
@@ -41,7 +41,7 @@ const SuccessStories = () => {
               key={item.id}
               style={{ backgroundImage: `url(${item.bgimg})` }}
             >
-              <div className='w-full h-full p-6  bg-gradient-to-t from-black/[30%] to-transparent'>
+              <div className='w-full h-full p-6  bg-gradient-to-t from-black/[60%] to-transparent'>
                 <div className="flex flex-col h-full justify-between">
                   <div className="item-logo flex items-center justify-end">
                     {/* <img src={item.logo} alt="这是一个图片" /> */}
