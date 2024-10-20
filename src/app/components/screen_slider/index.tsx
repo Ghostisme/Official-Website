@@ -16,7 +16,7 @@ const menuList = [
     title: '标注平台',
     code: 'annotation',
     // href: '/anno'
-    href: 'http://47.116.163.237:8190/'
+    href: 'http://116.62.226.8:8190/'
   },
   // {
   //   id: 3,
