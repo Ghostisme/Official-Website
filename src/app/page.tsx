@@ -39,7 +39,22 @@ export default function Home() {
   );
   useEffect(() => {
     setList(swiperList);
-  });
+  }, []);
+
+
+  useEffect(() => {
+    const baseSize = 16;
+    const resetRem = () => {
+      const scale = document.documentElement.clientWidth / 1920;
+      document.documentElement.style.fontSize = `${baseSize * Math.min(scale, 2)}px`;
+    }
+    window.addEventListener('resize', resetRem);
+    resetRem()
+    return () => {
+      window.removeEventListener('resize', resetRem);
+    }
+  }, [])
+
   return (
     <main className="overflow-x-hidden">
       <section className="indicator scroll-indicator"></section>

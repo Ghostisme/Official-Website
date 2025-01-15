@@ -6,7 +6,6 @@ const config: Config = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}'
   ],
-  presets: [require('@acmecorp/base-tailwind-config')],
   theme: {
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],
@@ -25,12 +24,6 @@ const config: Config = {
         '4xl': '2rem'
       }
     }
-  },
-  plugins: [
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/aspect-ratio'),
-    require('@tailwindcss/typography'),
-    require('tailwindcss-children')
-  ]
+  }
 };
 export default config;

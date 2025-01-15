@@ -27,13 +27,15 @@ const LabelScreen = () => {
           <div
             key={id}
             className={twMerge(
-              'w-[600px] h-[700px] border-solid border-[#4C4C4C] border-[5px] bg-gray-900	 rounded-[10px] px-[42px]',
+              'w-[43.75rem] h-[43.75rem] border-solid border-[#4C4C4C] border-[0.3125rem] bg-gray-900	 rounded-[2.625rem] px-[2.625rem]',
               className
             )}
           >
-            <Image alt={title} width={548} height={548} src={image} />
-            <div className="text-[45px] text-white">{title}</div>
-            <div className="text-[#CACACA] text-[20px] leading-5">
+            <div className='w-[34.25rem] h-[34.25rem] relative'>
+              <Image alt={title} fill src={image} />
+            </div>
+            <div className="text-[2.8125rem] text-white">{title}</div>
+            <div className="text-[#CACACA] text-[1.25rem] leading-5">
               {description}
             </div>
           </div>
